@@ -1,0 +1,19 @@
+
+body{
+    background-color: #28282B;
+    font-family: 'Roboto Mono', monospace;
+}
+.container{
+    height: 100vh;
+}
+
+.image{
+    height: 100px;
+    
+}
+.image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 3px;
+}

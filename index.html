@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="container d-flex justify-content-center align-items-center">
+      <div class="form w-100">
+        <div class="row p-0 m-0">
+          <div class="col-lg-8 col-12 p-0 m-0">
+            <div class="heading">
+              <h2 class="text-center m-0" style="font-weight: bold; color: white; font-size: 2rem;">MALZEME BİLGİSİ GİRİNİZ</h2>
+            </div>
+            <div class="content p-2">
+              <div class="row p-0 m-0 my-2">
+                <div class="col-md-3 p-0 m-0 d-flex justify-content-start align-items-center">
+                  <div style="font-weight: 700; color: white">Malzeme Cinsi</div>
+                </div>
+                <div class="col-lg-9 col-12 p-0 m-0">
+                  <select class="form-select type-of-material m-2">
+                    <option data-img="http://www.kar-dem.com/images/kare_dikdortgen_profiller.jpg" value="dortgen">Dörtgen</option>
+                    <option data-img="https://guldemir.com.tr/wp-content/uploads/2021/01/yuvarlakdoludemirnedir-770x400.jpeg" value="yuvarlak">Yuvarlak</option>
+                    <option data-img="https://demircelik.com/tr/img/boru-fiyatlari_3929.jpg" value="boru">Boru</option>
+                    <option data-img="https://www.pusatmetal.com.tr/wp-content/uploads/2019/05/altikose.jpg" value="altigen">Altıgen</option>
+                  </select>
+                </div>
+              </div>
+              <div class="row p-0 m-0 my-2">
+                <div class="col-md-3 p-0 m-0 d-flex justify-content-start align-items-center">
+                  <div style="font-weight: 700; color: white">Kalınlık/Dış çap</div>
+                </div>
+                <div class="col-md-9 p-0 m-0">
+                  <input class="form-control thickness" placeholder="Kalınlık veya dış çap"/>
+                </div>
+              </div>
+              <div class="row p-0 m-0 my-2">
+                <div class="col-md-3 p-0 m-0 d-flex justify-content-start align-items-center">
+                  <div style="font-weight: 700; color: white">En/iç çap</div>
+                </div>
+                <div class="col-md-9 p-0 m-0">
+                  <input class="form-control inner-diameter" placeholder="En veya iç çap"/>
+                </div>
+              </div>
+              <div class="row p-0 m-0 my-2">
+                <div class="col-md-3 p-0 m-0 d-flex justify-content-start align-items-center">
+                  <div style="font-weight: 700; color: white">Uzunluk</div>
+                </div>
+                <div class="col-md-9 p-0 m-0">
+                  <input class="form-control length" placeholder="Uzunluk"/>
+                </div>
+              </div>
+              <div class="row p-0 m-0 my-2">
+                <div class="col-md-3 p-0 m-0 d-flex justify-content-start align-items-center">
+                  <div style="font-weight: 700; color: white">Adet</div>
+                </div>
+                <div class="col-md-9 p-0 m-0">
+                  <input class="form-control quantity" placeholder="Adet"/>
+                </div>
+              </div>
+              <div class="row p-0 m-0 my-2">
+                <div class="col-md-3 p-0 m-0 d-flex justify-content-start align-items-center">
+                  <div style="font-weight: 700; color: white">Malzeme Kalitesi</div>
+                </div>
+                <div class="col-md-9 p-0 m-0">
+                  <select class="w-100 material-quality m-2">
+                    <option value="0.00000142">Delrin</option>
+                    <option value="0.000001">Polietilen</option>
+                    <option value="0.00000114">Polyamid</option>
+                    <option value="0.0000012">Kestamid</option>
+                    <option value="0.0000014">Fiber</option>
+                    <option value="0.0000009">Polipropilen</option>
+                    <option value="0.0000015">Pvc</option>
+                    <option value="0.0000015">Plexiglas</option>
+                  </select>
+                </div>
+              </div>
+              <div class="row p-0 m-0 my-2">
+                <div class="col-md-3 p-0 m-0 d-flex justify-content-start align-items-center">
+                  <div style="font-weight: 700; color: white">Özgül Ağırlık</div>
+                </div>
+                <div class="col-md-9 p-0 m-0">
+                  <input type="Number" class="form-control specific-weight" value="" disabled placeholder="Özgül Ağırlık"/>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 p-0 m-0">
+            <div class="heading-2">
+              <h2 class="text-center m-0" style="font-weight: bold; font-size: 2rem; color: white">MALZEME AĞIRLIĞI</h2>
+            </div>
+            <div class="content p-2">
+              <div class="row p-0 m-0 my-2">
+                <div class="col-md-12 p-0 m-0 d-flex justify-content-center">
+                  <div style="font-weight: 700; font-size: 20px; color: white">Seçtiğiniz Ürün</div>
+                </div>
+              </div>
+              <div class="row p-0 m-0 my-2">
+                <div class="col-md-12 p-0 m-0 image">
+                  <img src="" alt="">
+                </div>
+              </div>
+              <div class="row p-0 m-0 mt-5">
+                <div class="col-md-12 p-0 m-0 d-flex justify-content-center align-items-center">
+                  <div style="font-weight: 700; font-size: 20px; color: white">Toplam Ağırlık</div>
+                </div>
+              </div>
+              <div class="row p-0 mt-3">
+                <div class="col-md-12 p-0 m-0 result d-flex justify-content-center align-items-center">
+                  <div class="weight" style="font-weight: 700; font-size: 45px; color: white; word-spacing: 0px;"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row p-0 m-0">
+          <div class="col-md-12 p-0 m-0">
+            <div class="button text-center">
+              <button class="btn btn-success">Sipariş Ver</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.8/jquery.mask.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>  
+    <script src="script.js"></script>
+  </body>
+</html>
+<!-- 
+
+  <label class="m-2" for="#">Malzeme Cinsi</label>
+        <select class="form-select type-of-material m-2">
+          <option value="dortgen">Dörtgen</option>
+          <option value="yuvarlak">Yuvarlak</option>
+          <option value="boru">Boru</option>
+          <option value="altigen">Altıgen</option>
+        </select>
+        <div class="m-2">
+          <input class="form-control thickness" placeholder="Kalınlık veya dış çap"/>
+        </div>
+        <div class="m-2">
+          <input class="form-control inner-diameter" placeholder="En veya iç çap"/>
+        </div>
+        <div class="m-2">
+          <input class="form-control length" placeholder="Uzunluk"/>
+        </div>
+        <div class="m-2">
+          <input class="form-control quantity" placeholder="Adet"/>
+        </div>
+        <label class="m-2" for="#">Malzeme Kalitesi</label>
+        <select class="form-select material-quality m-2">
+          <option value="0.00000142">Delrin</option>
+          <option value="0.000001">Polietilen</option>
+          <option value="0.00000114">Polyamid</option>
+          <option value="0.0000012">Kestamid</option>
+          <option value="0.0000014">Fiber</option>
+          <option value="0.0000009">Polipropilen</option>
+          <option value="0.0000015">Pvc</option>
+          <option value="0.0000015">Plexiglas</option>
+        </select>
+        <div class="m-2">
+          <input type="Number" class="form-control specific-weight" value="" disabled placeholder="Özgül Ağırlık"/>
+        </div>
+        <div class="result d-flex justify-content-center align-items-center">
+          <h2 class="m-2 text-success weight"></h2>
+        </div>
+
+ -->
